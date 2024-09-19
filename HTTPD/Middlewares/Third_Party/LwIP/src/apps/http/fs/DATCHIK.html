@@ -1,0 +1,66 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content ="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные датчиков</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .left-top-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        table {
+            margin: 100px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+	.refresh-button {
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .refresh-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><img src="/img/sas.gif"
+    border="0" alt="logo title="switte cat" class="left-top-image"></a>
+    <h1>Данные датчиков</h1>
+    <table>
+        <tr>
+            <th>Температура</th>
+            <th>Давление</th>
+            <th>Влажность</th>
+        </tr>
+        <tr>
+            <td><!--#x--></td>
+            <td><!--#y--></td>
+            <td><!--#z--></td>
+        </tr>
+    </table>
+    <button class="refresh-button" onclick="refreshData()">Обновить данные</button>
+</body>
+</html>

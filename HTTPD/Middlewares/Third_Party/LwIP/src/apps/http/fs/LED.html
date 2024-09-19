@@ -1,0 +1,78 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light it's my live</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-top-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .script-button-green {
+            display: inline-block;
+            width: 250px;
+            height: 75px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .script-button-green:hover {
+            background-color: #45a049;
+        }
+	.script-button-blue {
+            display: inline-block;
+            width: 250px;
+            height: 75px;
+            background-color: #00008B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .script-button-blue:hover {
+            background-color: #1E90FF;
+        }
+	.script-button-red {
+            display: inline-block;
+            width: 250px;
+            height: 75px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .script-button-red:hover {
+            background-color: #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><img src="/img/sas.gif"
+    border="0" alt="logo title="switte cat" class="left-top-image"></a>
+    <h1>Взаимодействие с огоньками</h1>
+    <form align="center" method="get" action="/led_green.cgi">
+        <input type="submit" value="Вкл/Выкл зелённого светодиода" class="script-button-green">
+    </form>
+	<form align="center" method="get" action="/led_blue.cgi">
+        <input type="submit" value="Вкл/Выкл синего светодиода" class="script-button-blue">
+    </form>
+	<form align="center" method="get" action="/led_red.cgi">
+        <input type="submit" value="Вкл/Выкл красного светодиода" class="script-button-red">
+    </form>
+</body>
+</html>
